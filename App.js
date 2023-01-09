@@ -1,5 +1,6 @@
 
-
+import React from 'react';
+import ReactDOM from 'react-dom/client'; 
 
 /**
  * <div class="header">
@@ -25,6 +26,6 @@
     "namaste react",
   );
   
-  root.render(header);
+  root.render(heading);
 
   console.log(heading);
