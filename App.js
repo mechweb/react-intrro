@@ -1,3 +1,6 @@
+
+
+
 /**
  * <div class="header">
         <h1>Namaste React</h1>
@@ -16,6 +19,12 @@
     {},
     "hello js"
   )
+  const heading = React.createElement(
+    "h1",
+    {},
+    "namaste react",
+  );
   
   root.render(header);
-  console.log(header);
+
+  console.log(heading);
