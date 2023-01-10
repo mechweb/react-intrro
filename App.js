@@ -15,17 +15,41 @@ import ReactDOM from 'react-dom/client';
  */
 
   const root=ReactDOM.createRoot(document.getElementById("root"));
-  const header=React.createElement(
-    "div",
-    {},
-    "hello js"
-  )
-  const heading = React.createElement(
-    "h1",
-    {},
-    "namaste react",
-  );
   
-  root.render(heading);
+  const container=React.createElement(
+    "div",
+    {
+      id:"container",
+    },
+    [React.createElement(
+      "h1",
+      { id :"h1"},
+      "namaste react",
+    ),
+    React.createElement("ul", {id :"ul"},[React.createElement(
+        "li",
+        { id :"li1"},
+        "ABOUT US",
+      ),React.createElement(
+        "li",
+        { id :"li2"},
+        "SUPPORT",
+      ),React.createElement(
+        "li",
+        { id :"li3"},
+        "HOME",
+      ),]
+    )]
+  )
+  //using JSX - is html like syntax (not an html)inside javascript
+  const heading2=<h1>hello jsx</h1> // this syntax browser don't understand so
+  // babel will internally convert this into 
+//  const heading2= React.createElement(
+//     "h1",{ },"hello jsx",)
+    //so that browser can understand it 
+  
+  
+  
+    root.render(container);
 
   console.log(heading);
