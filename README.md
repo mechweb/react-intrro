@@ -1,8 +1,13 @@
 # introducing with react
 
-get to learn about CDN.
-learn about parcel
-learn about some packages like 
+1.get to learn about CDN.
+
+2.learn about parcel
+
+3.learn about some packages like 
+
  -package.json
+
  -package-lock.json
-also learn about babel
+
+4.also learn about babel
