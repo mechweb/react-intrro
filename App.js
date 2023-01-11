@@ -42,7 +42,7 @@ import ReactDOM from 'react-dom/client';
     )]
   )
   //using JSX - is html like syntax (not an html)inside javascript
-  const heading2=<h1>hello jsx</h1> // this syntax browser don't understand so
+  const heading2=<h1>Hello jsx</h1> // this syntax browser don't understand so
   // babel will internally convert this into 
 //  const heading2= React.createElement(
 //     "h1",{ },"hello jsx",)
@@ -53,7 +53,8 @@ import ReactDOM from 'react-dom/client';
     const HeaderComponent = () =>{
       return(
           <div>
-        <h1>functional component</h1>
+            {heading2} 
+        <h2>functional component</h2>
         <h2> this is h2 tag</h2>
           </div>
       )
