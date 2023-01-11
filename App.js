@@ -50,9 +50,14 @@ import ReactDOM from 'react-dom/client';
   
     // functional component
 
+    const Title = ()=>{
+     return(
+      <h1 key="title2" >Component</h1>
+    )}
     const HeaderComponent = () =>{
       return(
           <div>
+             <Title/>
             {heading2} 
         <h2>functional component</h2>
         <h2> this is h2 tag</h2>
