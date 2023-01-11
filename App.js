@@ -48,8 +48,17 @@ import ReactDOM from 'react-dom/client';
 //     "h1",{ },"hello jsx",)
     //so that browser can understand it 
   
-  
-  
-    root.render(container);
+    // functional component
 
-  console.log(heading);
+    const HeaderComponent = () =>{
+      return(
+          <div>
+        <h1>functional component</h1>
+        <h2> this is h2 tag</h2>
+          </div>
+      )
+    }
+  
+  
+    root.render(<HeaderComponent/>);
+
