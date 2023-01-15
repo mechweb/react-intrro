@@ -3,10 +3,13 @@
     justify-content: space-between;
     margin: 10px;
     border:1px solid black;
+    border-radius: 12px;
+    background-color: rgb(148, 82, 209);
 }
 .logo{
     width: 120px;
     height: 100%;
+    border-radius: 12px;
 }
 
 .nav-item > ul{
@@ -17,15 +20,23 @@
     padding: 10px;
 }
 .card{
+    display: flex;
+    flex-direction: column;
     width: 200px;
     padding :10px;
     margin:10px;
     border: 1px solid brown;
+    background-color: rgb(148, 82, 209);;
+    border-radius: 14px;
 }
 .card > img{
     width: 100%;
 }
 
 body{
-    background-color: rgb(249, 208, 249);
+    background-color: rgb(254, 225, 254);
+}
+.restaurant-list{
+   display: flex;
+   flex-wrap: wrap;
 }
