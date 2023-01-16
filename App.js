@@ -1907,9 +1907,7 @@ import ReactDOM from 'react-dom/client';
 
       )}
 
-      const RestaurantCard=({restaurant})=>{
-
-        const {cloudinaryImageId,name,cuisines,lastMileTravelString} = restaurant.data;
+      const RestaurantCard=({cloudinaryImageId,name,cuisines,lastMileTravelString})=>{
         return(
           <div className='card'>
             <img className="logo"src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"+cloudinaryImageId}></img>
@@ -1940,12 +1938,13 @@ import ReactDOM from 'react-dom/client';
       return(
        <div className='restaurant-list'>
 
-             <RestaurantCard restaurant={RestaurantList[0]}/>
-             <RestaurantCard restaurant={RestaurantList[1]}/>
-             <RestaurantCard restaurant={RestaurantList[2]}/>
-             <RestaurantCard restaurant={RestaurantList[3]}/>
-             <RestaurantCard restaurant={RestaurantList[4]}/>
-             <RestaurantCard restaurant={RestaurantList[5]}/>
+             <RestaurantCard name={RestaurantList[0].data.name}cuisines={RestaurantList[0].data.cuisines}
+             cloudinaryImageId={RestaurantList[0].data.cloudinaryImageId}/>
+             <RestaurantCard {...RestaurantList[1].data} />
+             <RestaurantCard {...RestaurantList[2].data}/>
+             <RestaurantCard {...RestaurantList[3].data}/>
+             <RestaurantCard {...RestaurantList[4].data}/>
+             <RestaurantCard {...RestaurantList[5].data}/>
             
 
       </div>
