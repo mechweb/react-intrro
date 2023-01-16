@@ -1908,12 +1908,14 @@ import ReactDOM from 'react-dom/client';
       )}
 
       const RestaurantCard=({restaurant})=>{
+
+        const {cloudinaryImageId,name,cuisines,lastMileTravelString} = restaurant.data;
         return(
           <div className='card'>
-            <img className="logo"src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"+restaurant.data?.cloudinaryImageId}></img>
-            <h2>{restaurant.data?.name}</h2>
-            <h3>{restaurant.data?.cuisines?.join(" , ")}</h3>     
-            <h4>{restaurant.data.lastMileTravelString}</h4>
+            <img className="logo"src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"+cloudinaryImageId}></img>
+            <h2>{name}</h2>
+            <h3>{cuisines?.join(" , ")}</h3>     
+            <h4>{lastMileTravelString}</h4>
         </div>
         )
       }
